@@ -4,6 +4,7 @@ PATH
     rulers (0.0.2)
       erubis
       multi_json
+      sqlite3
 
 GEM
   remote: https://rubygems.org/
@@ -23,6 +24,7 @@ GEM
       ffi (~> 1.0)
     rerun (0.14.0)
       listen (~> 3.0)
+    sqlite3 (1.6.9-x86_64-linux)
     webrick (1.8.1)
 
 PLATFORMS
