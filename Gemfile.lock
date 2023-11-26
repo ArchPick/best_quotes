@@ -3,6 +3,7 @@ PATH
   specs:
     rulers (0.0.2)
       erubis
+      multi_json
 
 GEM
   remote: https://rubygems.org/
@@ -12,6 +13,7 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    multi_json (1.15.0)
     rack (3.0.8)
     rackup (2.1.0)
       rack (>= 3)

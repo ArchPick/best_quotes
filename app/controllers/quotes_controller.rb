@@ -6,6 +6,26 @@ class QuotesController < Rulers::Controller
 #      "\n<pre>\n#{env}\n</pre>"
   end
 
+  def quote_1
+    quote_1 = FileModel.find(1)
+    render :quote, :obj => quote_1
+  end
+
+  def index
+    quotes = FileModel.all
+    render :index, :quotes => quotes
+  end
+
+  def new_quote
+    attr = {
+      "submitter" => "web user",
+      "quote" => "A picture is worth one k pixels",
+      "attribution" => "Me"
+    }
+    m = FileModel.create attr
+    render :quote, :obj => m
+  end
+
   def exception
     raise "It's a bad one!"
   end
