@@ -9,3 +9,4 @@ class QuotesController < Rulers::Controller
     raise "It's a bad one!"
   end
 end
+# Test to retart
